@@ -26,31 +26,31 @@ public class JavaFXApp extends Application {
     private static final String DIVIDE = "/";
     private static final String SUBTRACT = "-";
 
-    private int getNumberFromTextField(TextField textField) {
-        return Integer.parseInt(textField.getText());
+    private double getNumberFromTextField(TextField textField) {
+        return Double.parseDouble(textField.getText());
     }
 
-    protected int computeAdd(int number1, int number2) {
+    protected double computeAdd(double number1, double number2) {
         return number1 + number2;
     }
 
-    protected int computeMultiply(int number1, int number2) {
+    protected double computeMultiply(double number1, double number2) {
         return number1 * number2;
     }
 
-    protected int computeDivide(int number1, int number2) {
+    protected double computeDivide(double number1, double number2) {
         return number1 / number2;
     }
 
-    protected int computeSubtract(int number1, int number2) {
+    protected double computeSubtract(double number1, double number2) {
         return number1 - number2;
     }
 
     private void compute(String operator) {
 
-        int result;
-        int number1 = getNumberFromTextField(txtNumber1);
-        int number2 = getNumberFromTextField(txtNumber2);
+        double result;
+        double number1 = getNumberFromTextField(txtNumber1);
+        double number2 = getNumberFromTextField(txtNumber2);
 
         switch (operator) {
             case PLUS:
