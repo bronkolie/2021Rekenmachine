@@ -44,7 +44,8 @@ public class JavaFXApp extends Application {
     protected int computeDivide(int number1, int number2) {
         return number1 / number2;
     }
-    
+
+    //Dit is om nummers af te trekken  ;)
     protected int computerSubtract(int number1, int number2) {
         return number1 - number2;
     }
